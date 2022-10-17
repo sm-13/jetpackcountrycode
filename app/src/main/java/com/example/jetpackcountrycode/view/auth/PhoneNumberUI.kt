@@ -1,5 +1,6 @@
 package com.example.jetpackcountrycode.view.auth
 
+import android.annotation.SuppressLint
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Scaffold
@@ -12,9 +13,11 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.jetpackcountrycode.components.PhoneNumberTextfield
 import com.example.jetpackcountrycode.ui.theme.darkblue
 import com.example.jetpackcountrycode.ui.theme.poppins
 
+@SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
 fun PhoneNumberUI(){
     Scaffold(
@@ -39,7 +42,7 @@ fun PhoneNumberUI(){
                 lineHeight = 58.sp
             )
 //            WANT TO ADD TOGISOFT JETPACK COUNTRY CODE PICKER HERE
-
+            PhoneNumberTextfield()
         }
     }
 }
